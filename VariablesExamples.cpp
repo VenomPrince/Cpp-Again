@@ -18,24 +18,24 @@ int main() {
 
     if (grade == 'A') {
         do {
-            gpa = gpas[rand() % 5];
-        } while (gpa < 4.0);
+            gpa = gpas[rand() % 5]; // Randomly select a GPA from the array
+        } while (gpa < 4.0); // Keep selecting a GPA until it is greater than or equal to 4.0
     } else if (grade == 'B') {
         do {
-            gpa = gpas[rand() % 5];
-        } while (gpa < 3.0 || gpa >= 3.5);
+            gpa = gpas[rand() % 5]; // Randomly select a GPA from the array
+        } while (gpa < 3.0 || gpa >= 3.5); // Keep selecting a GPA until it is greater than or equal to 3.0 and less than 3.5
     } else if (grade == 'C') {
         do {
-            gpa = gpas[rand() % 5];
-        } while (gpa < 2.5 || gpa >= 3.0);
+            gpa = gpas[rand() % 5];// Randomly select a GPA from the array
+        } while (gpa < 2.5 || gpa >= 3.0);// Keep selecting a GPA until it is greater than or equal to 2.5 and less than 3.0
     } else if (grade == 'D') {
         do {
-            gpa = gpas[rand() % 5];
-        } while (gpa < 2.0 || gpa >= 2.5);
+            gpa = gpas[rand() % 5];// Randomly select a GPA from the array
+        } while (gpa < 2.0 || gpa >= 2.5);// Keep selecting a GPA until it is greater than or equal to 2.0 and less than 2.5
     } else {
         do {
-            gpa = gpas[rand() % 5];
-        } while (gpa >= 2.0);
+            gpa = gpas[rand() % 5];// Randomly select a GPA from the array
+        } while (gpa >= 2.0);// Keep selecting a GPA until it is less than 2.0
     }
 
     cout << "Enter your name: ";
