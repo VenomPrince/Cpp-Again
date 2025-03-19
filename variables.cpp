@@ -15,7 +15,11 @@ int main() {
     char e = 'A';
     float f = 3.14;
     double g = 3.14159;
-    
+    const int h = 10; // Constants are variables whose values cannot be changed once they are assigned
+    // The value of h will always be 10, even if we try to change it example h = 5; will give an error
+    // int h = 5; // if you remove // from this line,This will give an error because h is a constant
+    cout<<"The value of h is: "<<h<<endl;
+    cout << "The value of a is: " << a << endl; 
     if (d == true){ // if d is true
         cout << "The value of c is: " << c <<", and d is true\n" << endl;
     } else { // if d is false
